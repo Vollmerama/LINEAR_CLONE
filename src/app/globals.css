@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navigation-height: 4.8rem;
+  }
+  html {
+    @apply bg-background font-sans text-white;
+    font-size: 62, 5%;
+  }
+  .btn-signup {
+    @apply px-2 py-1 rounded-3xl text-sm mr-6 bg-purple-500 bg-gradient-to-br from-blue-800 to-purple-400 hover:from-blue-700  hover:text-shadow hover:shadow-primary;
+  }
+  .bg-background {
+    background-color: #1a202c;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 3px 12px rgb(0, 0, 0, 56%);
+  }
+}
